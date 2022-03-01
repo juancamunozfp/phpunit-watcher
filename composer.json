@@ -23,7 +23,7 @@
         "symfony/finder": "^5.4 | ^6",
         "symfony/process": "^5.4 | ^6",
         "symfony/yaml": "^5.2 | ^6",
-        "yosymfony/resource-watcher": "^2.0 | ^3.0"
+        "yosymfony/resource-watcher": "dev-master"
     },
     "conflict": {
         "yosymfony/resource-watcher": "<2.0",
@@ -45,6 +45,12 @@
             "tests/helpers.php"
         ]
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/lucassabreu/resource-watcher"
+        }
+    ],
     "scripts": {
         "test": "vendor/bin/phpunit"
     },
